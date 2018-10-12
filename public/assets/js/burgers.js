@@ -4,7 +4,7 @@ $(function() {
       var newStatus = $(this).data("newstatus");
   
       var newStatusState = {
-        sleepy: newStatus
+        hungry: newStatus
       };
   
 // ==========PUT request====================================
@@ -24,7 +24,7 @@ $(function() {
   
       var newBurger = {
         name: $("#ca").val().trim(),
-        devour: $("[name=status]:checked").val().trim()
+        hungry: $("[name=status]:checked").val().trim()
       };
   
 // =========POST request========================================

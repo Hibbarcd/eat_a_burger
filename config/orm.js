@@ -26,7 +26,7 @@ function objToSql(ob) {
         value = "'" + value + "'";
       }
       // e.g. {name: 'Mushroom & Swiss'} => ["name='Mushroom & Swiss'"]
-      // e.g. {eaten: true} => ["eaten=true"]
+      // e.g. {eaten: true} => ["hungry=true"]
       arr.push(key + "=" + value);
     }
   }

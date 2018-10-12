@@ -5,8 +5,8 @@
 <div class="left-uneaten">
 <ul>
   {{#each burgers}}
-    {{#unless sleepy}}
-      {{> burgers/burger-block sleepy=true}}
+    {{#unless hungry}}
+      {{> burgers/burger-block hungry=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -16,8 +16,8 @@
 <h2>Need to be made again if you want to eat!</h2>
 <ul>
   {{#each burgers}}
-    {{#if sleepy}}
-      {{> burgers/burger-block sleepy=false}}
+    {{#if hungry}}
+      {{> burgers/burger-block hungry=false}}
     {{/if}}
   {{/each}}
 </ul>
